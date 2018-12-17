@@ -14,7 +14,8 @@ namespace ConsoleApp1
             Console.WriteLine("Hodnota je " + x);
 
             double dnum = 0.1d;
-            float fnum = 0.2f;        
+            float fnum = 0.2f;
+            Console.WriteLine(dnum);
         }
     }
 }
