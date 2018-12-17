@@ -17,7 +17,10 @@ namespace ConsoleApp1
             float fnum = 0.2f;
             decimal decnum = 5.5m;
 
-            Console.WriteLine(""+dnum+fnum+decnum);
+            char c = 'c';
+            string jmeno = "John";
+
+            Console.WriteLine(""+dnum+fnum+decnum+c+jmeno);
         }
     }
 }
