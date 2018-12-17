@@ -20,7 +20,19 @@ namespace ConsoleApp1
             char c = 'c';
             string jmeno = "John";
 
-            Console.WriteLine(""+dnum+fnum+decnum+c+jmeno);
+            bool isDone = false;
+
+            Console.WriteLine(""+dnum+fnum+decnum+c+jmeno+isDone);
+
+            int cislo = 15;
+            string strCislo = cislo.ToString();
+            float ff =3.5f;
+            cislo = Convert.ToInt32(ff); //4
+            cislo = (int)ff; //3
+            Console.WriteLine(cislo);
+
+            var something = 10;
+            Console.WriteLine(something);
         }
     }
 }
