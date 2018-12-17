@@ -15,7 +15,9 @@ namespace ConsoleApp1
 
             double dnum = 0.1d;
             float fnum = 0.2f;
-            Console.WriteLine(dnum);
+            decimal decnum = 5.5m;
+
+            Console.WriteLine(""+dnum+fnum+decnum);
         }
     }
 }
