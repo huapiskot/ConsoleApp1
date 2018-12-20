@@ -17,6 +17,8 @@ namespace ConsoleApp1
             float fnum = 0.2f;
             decimal decnum = 5.5m;
 
+            Console.WriteLine("Decimal: {0}, double: {1}, float: {2}",decnum,dnum,fnum);
+
             char c = 'c';
             string jmeno = "John";
 
@@ -33,6 +35,10 @@ namespace ConsoleApp1
 
             var something = 10;
             Console.WriteLine(something);
+
+            Console.WriteLine(typeof(int).IsPrimitive);
+
+
         }
     }
 }
