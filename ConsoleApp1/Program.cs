@@ -62,6 +62,9 @@ namespace ConsoleApp1
 
             Console.WriteLine(string.Format("Datum je {0:yyyy MMMM 'nejaky text yyyy uprostred' ddd: HH mm ss}", dt));
 
+            var day = DateTime.Now.DayOfWeek.ToString();
+            Console.WriteLine(day); //Friday
+
             ushort sh = 125;
             switch (sh)
             {
@@ -69,6 +72,36 @@ namespace ConsoleApp1
                 case 0: Console.WriteLine("err!"); break;
                 default: Console.WriteLine("aaaa"); break;
             }
+
+            int res = -999;
+            //pokud se nepodari parsovani, tak hodnota v promenne res je nulova!
+            //bool ret = int.TryParse(Console.ReadLine(), out res); //vstup: "x", vystup: false/res:0
+            //bool ret2 = int.TryParse(Console.ReadLine(), out res); //vstup: "10", vystup: true/res:10
+
+            //Console.WriteLine("ret: {0}, num: {1}", ret2, res);
+
+
+            const double pi = 3.14;
+            //pi = 1;
+
+
+            string str = "Game of Thrones";
+            //Poradi znaku: 012345678901234
+            Console.WriteLine(str.IndexOf('o')); //5
+            Console.WriteLine(str.LastIndexOf('o')); //11
+
+            Console.WriteLine(str.Substring(5)); //of Thrones
+            Console.WriteLine(str.Substring(5, 2)); //of   [index znaku,pocet znaku]
+
+            Console.WriteLine(str.Remove(3)); //Gam  [vymaze vse od 3. indexu znaku, vcetne]
+            Console.WriteLine(str.Remove(3, 2)); //Gamof Thrones   [vymaze od 3. indexu znaku vcetne v delce dvou znaku] 
+
+            Console.WriteLine(str.Insert(1, "XXX")); //GXXXame of Thrones
+
+            string xy = "bflm";
+            Console.WriteLine("text {0}", xy);
+            Console.WriteLine($"text {xy}");
+
         }
     }
 }
